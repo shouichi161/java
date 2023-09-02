@@ -25,5 +25,12 @@ public class main {
       s4.indexOf("Java"));
     System.out.println("文字列s4で最後にJavaが登場する位置は" +
       s4.lastIndexOf("Java"));
+
+    String s5 ="Java Programming";
+    System.out.println("文字列s5の4文字以降は" +
+      s5.substring(3));
+    System.out.println("文字列s5の４〜８文字目は" +
+      s5.substring(3,8));
   }
 }
+
