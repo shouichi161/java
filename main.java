@@ -38,17 +38,17 @@ public class main {
     }
     String s = sb.toString();
     System.out.println(s);
-    
+
     String ss = "Java";
     System.out.println(ss.matches("Java"));
     System.out.println(ss.matches("JavaJava"));
     System.out.println(ss.matches("java"));
-    
+
     System.out.println(ss.matches("J.va"));
     System.out.println("Jaaaaava".matches("Ja*va"));
     System.out.println("ああxx000".matches(".*"));
     System.out.println("url".matches("[a-z]{3}"));
-    
+
     String s6 = "abc,def:ghi";
     String[] words = s6.split("[,:]");
     for(String w : words) {
@@ -56,6 +56,16 @@ public class main {
     }
     String x =s6.replaceAll("[beh]","X");
     System.out.println(x);
+
+    System.out.printf("製品番号%s-%02d", "SJV",3);
+
+    StringBuilder sc = new StringBuilder();
+    for(int i = 0; i < 100; i++) {
+      sc.append(i+1).append(",");
+    }
+    String s8 = sc.toString();
+    System.out.println(s8);
+    
   }
 }
 
