@@ -31,6 +31,25 @@ public class main {
       s5.substring(3));
     System.out.println("文字列s5の４〜８文字目は" +
       s5.substring(3,8));
+
+    StringBuilder sb = new StringBuilder();
+    for(int i = 0; i < 10; i++) {
+      sb.append("Java");
+    }
+    String s = sb.toString();
+    System.out.println(s);
+    
+    String ss = "Java";
+    System.out.println(ss.matches("Java"));
+    System.out.println(ss.matches("JavaJava"));
+    System.out.println(ss.matches("java"));
+    
+    System.out.println(ss.matches("J.va"));
+    System.out.println("Jaaaaava".matches("Ja*va"));
+    System.out.println("ああxx000".matches(".*"));
+    System.out.println("url".matches("[a-z]{3}"));
+    
+    
   }
 }
 
