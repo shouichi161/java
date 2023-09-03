@@ -49,7 +49,13 @@ public class main {
     System.out.println("ああxx000".matches(".*"));
     System.out.println("url".matches("[a-z]{3}"));
     
-    
+    String s6 = "abc,def:ghi";
+    String[] words = s6.split("[,:]");
+    for(String w : words) {
+      System.out.print(w + "->");
+    }
+    String x =s6.replaceAll("[beh]","X");
+    System.out.println(x);
   }
 }
 
