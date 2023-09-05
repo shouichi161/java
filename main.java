@@ -65,7 +65,7 @@ public class main {
     }
     String s8 = sc.toString();
     System.out.println(s8);
-    
+
   }
 }
 
