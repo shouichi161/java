@@ -41,7 +41,11 @@ public class Collection {
     colors.add("黄");
     colors.add("赤");
     colors.add("緑");
+    for(String s : colors) {
+      System.out.print(s + "→");
+    }
     System.out.println("色は" + colors.size() + "種類");
+
 
 
   }
