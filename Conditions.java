@@ -1,5 +1,6 @@
-public class If {
+public class Conditions {
   public static void main (String[] args) {
+    // if文
     boolean tenki = true;
     if (tenki == true) {
       System.out.println("洗濯をします");
@@ -7,7 +8,8 @@ public class If {
     } else {
       System.out.println("DVDを見ます");
     }
-    
+
+    //switch
     System.out.println("あなたの運勢を占います。");
     int fortune = new java.util.Random().nextInt(4);
     switch (fortune) {
@@ -22,6 +24,15 @@ public class If {
       break;
       default:
         System.out.println("凶");
+    }
+
+    //for
+    for (int i = 0; i < 10; i++) {
+      System.out.println("こんにちは");
+    }
+
+    for (int j = 0; j < 3; j++) {
+      System.out.print("現在" + (j + 1) + "週目→");
     }
   }
 }
