@@ -28,5 +28,21 @@ public class Array {
       char[] base = {'A', 'T', 'G', 'C'};
       System.out.print(base[seq[j]] + " ");
     }
+
+    //拡張for文
+    int[] scores2 = {20, 30, 40, 50, 80};
+    for (int value : scores2) {
+      System.out.println(value);
+    }
+
+    //二次元配列
+    int[][] scores3 = new int[2][3];
+    scores3[0][0] = 40;
+    scores3[0][1] = 50;
+    scores3[0][2] = 60;
+    scores3[1][0] = 80;
+    scores3[1][1] = 100;
+    scores3[1][2] = 70;
+    System.out.println(scores3[1][1]);
   }
 }
