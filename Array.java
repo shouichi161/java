@@ -44,5 +44,9 @@ public class Array {
     scores3[1][1] = 100;
     scores3[1][2] = 70;
     System.out.println(scores3[1][1]);
+
+    int[][] scores4 ={{40, 50, 60},{80, 60, 70}};
+    System.out.println(scores4.length);
+    System.out.println(scores4[0].length);
   }
 }
