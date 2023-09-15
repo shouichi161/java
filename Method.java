@@ -7,17 +7,17 @@ public class Method {
     hello("菅原");
     System.out.println("メソッドの呼び出しが終わりました");
     //複数の引数
-    add(100 ,20);
-    add(200, 50);
+    int ans = add(100, 10);
+    System.out.println("100 + 10 = " + ans);
   }
   public static void hello(String name) {
     System.out.println(name + "さん、こんにちは");
   }
 
   //複数の値を受け取るaddメソッド
-  public static void add(int x, int y) {
+  public static int add(int x, int y) {
     int ans = x + y;
-    System.out.println(x + "+" + y + "=" + ans);
+    return ans;
   }
 
 }
