@@ -6,6 +6,10 @@ public class Practice5 {
     String text = "テストです";
     email(title, address, text);
     email(address, text);
+    double TriangleArea = calcTriangleArea(10.0, 5.0);
+    System.out.println(TriangleArea);
+    double CircleArea = calcCircleArea(5.0);
+    System.out.println(CircleArea);
   }
 
   public static void introduceOneself() {
@@ -27,5 +31,13 @@ public class Practice5 {
     System.out.println(address + "に以下のメールを送信しました");
     System.out.println("件名：無題");
     System.out.println("本文：" + text);
+  }
+  public static double calcTriangleArea(double bottom, double height) {
+    double area = (bottom * height) / 2;
+    return area;
+  }
+  public static double calcCircleArea(double radius) {
+    double area = radius * radius * 3.14;
+    return area;
   }
 }
