@@ -1,13 +1,24 @@
 public class Main {
   public static void main(String[] args) {
-    Sword s = new Sword();
-    s.name = "炎の剣";
-    s.damage = 10;
-    Hero h = new Hero();
-    h.name = "ミナト";
-    h.hp = 100;
-    h.sword = s;
-    System.out.println(h.name + "の現在の武器は" + h.sword.name);
-    h.attack();
+    Sword s1 = new Sword();
+    s1.name = "炎の剣";
+    s1.damage = 10;
+    Hero h1 = new Hero();
+    h1.name = "ミナト";
+    h1.hp = 100;
+    h1.sword = s1;
+    System.out.println(h1.name + "の現在の武器は" + h1.sword.name);
+    h1.attack();
+    Hero h2 = new Hero();
+    h2.name = "アサカ";
+    h2.hp = 100;
+    Wizard w1 = new Wizard();
+    w1.name = "スガワラ";
+    w1.hp = 50;
+    w1.heal(h1);
+    w1.heal(h2);
+    w1.heal(h2);
+    System.out.println(h1.hp);
+    System.out.println(h2.hp);
   }
 }
