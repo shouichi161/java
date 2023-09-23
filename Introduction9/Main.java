@@ -16,5 +16,7 @@ public class Main {
     w1.heal(h2);
     System.out.println(h1.hp);
     System.out.println(h2.hp);
+    Hero h3 = new Hero();
+    System.out.println(h3.name);
   }
 }
