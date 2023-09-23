@@ -19,5 +19,9 @@ public class Main {
     Hero h3 = new Hero();
     System.out.println(h3.name);
     System.out.println(h3.hp);
+    Thief t1 = new Thief("アサカ");
+    System.out.println(t1.name);
+    System.out.println(t1.hp);
+    System.out.println(t1.mp);
   }
 }
