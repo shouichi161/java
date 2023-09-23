@@ -18,5 +18,6 @@ public class Main {
     System.out.println(h2.hp);
     Hero h3 = new Hero();
     System.out.println(h3.name);
+    System.out.println(h3.hp);
   }
 }
