@@ -11,4 +11,8 @@ public class SuperHero extends Hero {
   public void run() {
     System.out.println(this.name + "は撤退した");
   }
+  public SuperHero() {
+    super();
+    System.out.println("SuperHeroのコンストラクタが動作");
+  }
 }
