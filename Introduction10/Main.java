@@ -6,5 +6,7 @@ public class Main {
     sh.run();
     Weapon w = new Weapon();
     System.out.println(w.name);
+    PoisonMatango pm = new PoisonMatango('A');
+    pm.attack(h);
   }
 }
