@@ -3,5 +3,5 @@ public abstract class Character {
   int hp;
   public void run(){
   }
-  public abstract void attack(Matango m);
+  public abstract void attack(Monster mo);
 }
