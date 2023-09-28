@@ -19,5 +19,12 @@ public class Main {
       ch.hp += 50;
       System.out.println(ch.hp);
     }
+    Monster[] monsters = new Monster[3];
+    monsters[0] = new Slime();
+    monsters[1] = new Matango();
+    monsters[2] = new Goblin();
+    for (Monster mo2 : monsters) {
+      mo2.run();
+    }
   }
 }
