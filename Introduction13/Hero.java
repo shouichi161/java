@@ -1,7 +1,10 @@
 public class Hero {
   private int hp;
-  String name;
+  private String name;
 
+  public Hero(String name) {
+    this.name = name;
+  }
   public void bye() {
     System.out.println("勇者は別れを告げた");
   }
@@ -21,5 +24,8 @@ public class Hero {
     if (this.hp <= 0) {
       this.die();
     }
+  }
+  public String getName() {
+    return this.name;
   }
 }
