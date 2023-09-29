@@ -1,16 +1,15 @@
 public class Hero {
-  int hp;
+  private int hp;
   String name;
-  Sword sword;
 
   public void bye() {
     System.out.println("勇者は別れを告げた");
   }
-  public void die() {
-    System.out.println("this.name + "は死んでしまった！);
+  private void die() {
+    System.out.println(this.name + "は死んでしまった！");
     System.out.println("GAMEOVERです。");
   }
-  public void sleep() {
+  void sleep() {
     this.hp = 100;
     System.out.println(this.name + "は眠って回復した！");
   }
