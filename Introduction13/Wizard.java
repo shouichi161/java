@@ -34,6 +34,9 @@ public class Wizard {
     return this.wand;
   }
   public void setWand(Wand wand) {
+    if (wand == null) {
+      throw new IllegalArgumentException("魔法使いの杖がnullです。");
+    }
     this.wand = wand;
   }
 }
