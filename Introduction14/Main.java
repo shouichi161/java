@@ -13,6 +13,9 @@ public class Main {
     p.printAnything(100);
     p.printAnything("Hello");
     p.printAnything(o3);
-    
+    Hero h = new Hero();
+    h.name = "ミナト";
+    h.hp = 100;
+    System.out.println(h.toString());
   }
 }
