@@ -9,5 +9,10 @@ public class Main {
     System.out.println(o1);
     System.out.println(o2);
     System.out.println(o3);
+    Printer p = new Printer();
+    p.printAnything(100);
+    p.printAnything("Hello");
+    p.printAnything(o3);
+    
   }
 }
