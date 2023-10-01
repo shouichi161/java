@@ -25,6 +25,9 @@ public class Wizard {
     return this.name;
   }
   public void setName(String name) {
+    if (name == null || name.length() < 3) {
+      throw new IllegalArgumentException("名前が短すぎる、処理を中断");
+    }
     this.name = name;
   }
   public Wand getWand() {

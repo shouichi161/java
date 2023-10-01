@@ -5,6 +5,7 @@ public class Main {
     k.talk(h1);
     // h1.setName("");
     Wizard wi = new Wizard();
+    // wi.setName("あい");
     Wand wa = new Wand();
     wa.setName("魔法のつえ");
     wa.setPower(10);
