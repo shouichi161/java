@@ -13,12 +13,20 @@ public class Wizard {
     return this.hp;
   }
   public void setHp(int hp) {
-    this.hp = hp;
+    if (hp < 0) {
+      this.hp = 0;
+    }
+    else {
+      this.hp = hp;
+    }
   }
   public int getMp() {
     return this.mp;
   }
   public void setMp(int mp) {
+    if (mp < 0) {
+      throw new IllegalArgumentException("mpの値が異常です");
+    }
     this.mp = mp;
   }
   public String getName() {

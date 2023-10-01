@@ -6,6 +6,9 @@ public class Main {
     // h1.setName("");
     Wizard wi = new Wizard();
     // wi.setName("あい");
+    wi.setHp(-100);
+    System.out.println(wi.getHp());
+    wi.setMp(50);
     Wand wa = new Wand();
     wa.setName("魔法のつえ");
     wa.setPower(10);
