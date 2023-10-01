@@ -14,6 +14,9 @@ public class Wand {
     return this.power;
   }
   public void setPower(double power) {
+    if (power < 0.5 || power > 100.0) {
+      throw new IllegalArgumentException("杖の増幅率が異常です。");
+    }
     this.power = power;
   }
 }
