@@ -25,10 +25,12 @@ public class Main {
     }  else {
       System.out.println("違う内容です");
     }
-    Hero.money = 100;
-    System.out.println(Hero.money);
-    System.out.println(h1.money);
-    h1.money += 300;
+    // Hero.money = 100;
+    // System.out.println(Hero.money);
+    // System.out.println(h1.money);
+    // h1.money += 300;
+    // System.out.println(h2.money);
+    h1.setRandomMoney();
     System.out.println(h2.money);
   }
 }
