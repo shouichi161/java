@@ -30,7 +30,14 @@ public class Main {
     // System.out.println(h1.money);
     // h1.money += 300;
     // System.out.println(h2.money);
-    h1.setRandomMoney();
+    Hero.setRandomMoney();
     System.out.println(h2.money);
+    Account a = new Account();
+    a.accountNumber = "4649";
+    a.balance = 1592;
+    System.out.println(a);
+    Account a2 = new Account();
+    a2.accountNumber = " 4649";
+    a2.balance = 1593;
   }
 }
