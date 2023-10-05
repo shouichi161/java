@@ -14,5 +14,15 @@ public class Main {
     if (s4.isEmpty()) {
       System.out.println("s4は空文字です");
     }
+
+    String s5 = "Java and JavaScript";
+    if (s5.contains("Java")) {
+      System.out.println("文字列s5は、Javaを含んでいます");
+    }
+    if (s5.endsWith("Java")) {
+      System.out.println("文字列s5は、Javaが末尾にあります");
+    }
+    System.out.println("文字列s5で最初にJavaが登場する位置は" + s5.indexOf("Java"));
+    System.out.println("文字列s5で最後にJavaが登場する位置は" + s5.lastIndexOf("Java"));
   }
 }
