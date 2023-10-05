@@ -1,5 +1,6 @@
 public class Main {
   public static void main(String[] args) {
+
     String s1 = "スッキリJava";
     String s2 = "Java";
     String s3 = "java";
@@ -24,5 +25,9 @@ public class Main {
     }
     System.out.println("文字列s5で最初にJavaが登場する位置は" + s5.indexOf("Java"));
     System.out.println("文字列s5で最後にJavaが登場する位置は" + s5.lastIndexOf("Java"));
+
+    String s6 = "Java programming";
+    System.out.println("文字列s6の４文字目以降は" + s6.substring(3));
+    System.out.println("文字列s6の1~8文字目は" + s6.substring(3,8));
   }
 }
