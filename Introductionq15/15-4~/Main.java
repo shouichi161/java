@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class Main {
   public static void main(String[] args) {
     // String s = "abc def ghi";
@@ -5,7 +7,7 @@ public class Main {
     // for (String w : words) {
     //   System.out.print(w + ",");
     // }
-    
+
     // String w = s.replaceAll("[beh]","X");
     // System.out.println(w);
     Hero h1 = new Hero();
@@ -21,5 +23,15 @@ public class Main {
     System.out.println(s);
     String s2 = String.format(FORMAT, h2.getName(), h2.getJob(), h2.getGold());
     System.out.println(s2);
+    
+    long start = System.currentTimeMillis();
+    long end = System.currentTimeMillis();
+    System.out.println("処理にかかった時間は" + (end - start) + "ミリ秒でした");
+    
+    Date now = new Date();
+    System.out.println(now);
+    System.out.println(now.getTime());
+    Date past = new Date(1600705425827L);
+    System.out.println(past);
   }
 }
