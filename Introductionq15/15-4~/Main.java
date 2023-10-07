@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.Date;
 
 public class Main {
@@ -23,15 +24,24 @@ public class Main {
     System.out.println(s);
     String s2 = String.format(FORMAT, h2.getName(), h2.getJob(), h2.getGold());
     System.out.println(s2);
-    
+
     long start = System.currentTimeMillis();
     long end = System.currentTimeMillis();
     System.out.println("処理にかかった時間は" + (end - start) + "ミリ秒でした");
-    
+
     Date now = new Date();
     System.out.println(now);
     System.out.println(now.getTime());
     Date past = new Date(1600705425827L);
     System.out.println(past);
+
+    Calendar c = Calendar.getInstance();
+    c.set(2019,8,22,1,23,45);
+    Date d = c.getTime();
+    System.out.println(d);
+    Date now2 = new Date();
+    c.setTime(now2);
+    int y = c.get(Calendar.YEAR);
+    System.out.println("今は" + y + "年です");
   }
 }
