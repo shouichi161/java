@@ -1,8 +1,9 @@
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
 public class Main {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
     // String s = "abc def ghi";
     // String[] words = s.split("[ ]");
     // for (String w : words) {
@@ -43,5 +44,13 @@ public class Main {
     c.setTime(now2);
     int y = c.get(Calendar.YEAR);
     System.out.println("今は" + y + "年です");
+    
+    
+    SimpleDateFormat f = new SimpleDateFormat("yyyy/mm/dd hh:mm:ss");
+    Date d2 = f.parse("2020/9/22 01:23:45");
+    System.out.println(d2);
+    Date now3 = new Date();
+    String s3 = f.format(now3);
+    System.out.println("今は" + s3 + "です");
   }
 }
