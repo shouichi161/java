@@ -27,5 +27,17 @@ public class Main {
     System.out.println(l2);
     System.out.println(z4);
     System.out.println(l3);
+    
+    LocalDate l4 = LocalDate.now();
+    LocalTime l5 = LocalTime.now();
+    Year y = Year.now();
+    YearMonth y2 = YearMonth.now();
+    MonthDay m2 = MonthDay.now();
+    System.out.println(l4);
+    System.out.println(l5);
+    System.out.println(y);
+    System.out.println(y2);
+    System.out.println(m2);
+    
   }
 }
