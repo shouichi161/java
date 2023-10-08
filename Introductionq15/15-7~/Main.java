@@ -17,5 +17,15 @@ public class Main {
     if (z2.isEqual(z3)) {
       System.out.println("これらは同じ瞬間を指しています");
     }
+    
+    LocalDateTime l1 = LocalDateTime.now();
+    LocalDateTime l2 = LocalDateTime.of(2020,1,1,9,5,0,0);
+    
+    ZonedDateTime z4 = l2.atZone(ZoneId.of("Europe/London"));
+    LocalDateTime l3 = z4.toLocalDateTime();
+    System.out.println(l1);
+    System.out.println(l2);
+    System.out.println(z4);
+    System.out.println(l3);
   }
 }
