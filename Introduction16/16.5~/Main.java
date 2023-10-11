@@ -18,5 +18,12 @@ public class Main {
       int value = prefs.get(key);
       System.out.println(key + "の人口は" + value + "です");
     }
+    
+    Hero h = new Hero();
+    h.name = "ミナト";
+    List<Hero> list = new ArrayList<Hero>();
+    list.add(h);
+    h.name = "スガワラ";
+    System.out.println(list.get(0).name);
   }
 }
