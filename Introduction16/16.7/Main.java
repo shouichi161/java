@@ -8,6 +8,13 @@ public class Main {
     heroes.add(h2);
     for (Hero h : heroes)
     System.out.println(h.getName());
-
-  }
+    
+    Map<Hero, Integer> dest = new HashMap<Hero, Integer>();
+    dest.put(h1, 3);
+    dest.put(h2, 7);
+    for (Hero key : dest.keySet()) {
+      int value = dest.get(key);
+      System.out.println(key.getName() + "が倒した敵=" + value);
+    }
+  }  
 }
