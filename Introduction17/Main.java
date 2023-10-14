@@ -8,5 +8,8 @@ public class Main {
     } catch (IOException e) {
       System.out.println("エラーが発生しました。");
     }
+    
+    Person p = new Person();
+    p.setAge(-200);
   }
 }
