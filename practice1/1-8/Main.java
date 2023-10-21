@@ -3,7 +3,7 @@ public class Main {
     String s = "abc,def:ghi";
     String w = s.replaceAll("[beh]","X");
     System.out.println(w);
-    
+
     String s2 = "こんにちは";
     String w2 = s2.replaceAll("[こんにちは]","こんばんは");
     System.out.println(w2);
