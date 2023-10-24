@@ -10,5 +10,18 @@ public class Main {
     d = d.plusDays(365);
     String str = d.format(f);
     System.out.println("365日後は" + str);
+    
+    d = d.minusYears(2);
+    String str2 = d.format(f);
+    System.out.println("2年前は" + str2);
+    
+    LocalDate now = LocalDate.now();
+    System.out.println(now.format(f));
+    if (now.isAfter(d)) {
+      System.out.println("nowはdより新しい");
+    }
+
+   
+
   }
 }
