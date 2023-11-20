@@ -9,7 +9,7 @@ public class Main {
     System.out.println("【システムプロパティ一覧】");
     while(i.hasNext()) {
       String key = i.next();
-      System.out.print(key + " = ");
+      System.out.print(key + " = ");xs
       System.out.println(System.getProperty(key));
     }
   }
